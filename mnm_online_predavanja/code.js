@@ -13,10 +13,12 @@ var cy1 = cytoscape({
       .css({
         'content': 'data(name)',
         'text-valign': 'center',
+        'text-halign': 'center',
         'color': 'black',
         'text-outline-width': 0,
         'text-outline-color': 'black',
-        'background-color': '#ffc966'
+        'background-color': '#ffc966',
+        'width': 80
       })
     .selector(':selected')
       .css({
@@ -94,7 +96,8 @@ var cy1 = cytoscape({
   
   layout: {
     name: 'dagre',
-    rankDir: 'LR'
+    rankDir: 'LR',
+    padding: 0
   }
 });
   
