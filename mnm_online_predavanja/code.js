@@ -29,9 +29,11 @@ var cy1 = cytoscape({
       })
     .selector('edge')
       .css({
-        'width': 4,
+        'width': 1,
         'target-arrow-shape': 'triangle',
-        'curve-style': 'bezier'
+        'target-arrow-color': '#afafaf',
+        'curve-style': 'bezier',
+        'line-color': '#afafaf'
       }), 
   elements: {
     nodes: [
@@ -59,7 +61,10 @@ var cy1 = cytoscape({
       { data: { id: 'pottocke', name: 'Potencija točke i radikalna os', href: 'http://mnm.hr/wp-content/uploads/2016/03/potencija_tocke.pdf' } },
       { data: { id: 'feuerbach', name: 'Kružnica 9 točaka (Feuerbachova)', href: 'http://mnm.hr/wp-content/uploads/2016/10/Feuerbachova_kruznica.pdf' } },
       { data: { id: 'ekstrem', name: 'Princip ekstrema', href: 'http://mnm.hr/wp-content/uploads/2016/10/Princip_ekstrema.pdf' } },
-      { data: { id: 'nindu', name: 'Napredna indukcija', href: 'http://mnm.hr/wp-content/uploads/2016/10/Napredna_indukcija.pdf' } }
+      { data: { id: 'nindu', name: 'Napredna indukcija', href: 'http://mnm.hr/wp-content/uploads/2016/10/Napredna_indukcija.pdf' } },
+      { data: { id: 'opc2016', name: 'Simulacija općinskog natjecanja 2016', href: 'http://mnm.hr/wp-content/uploads/2016/01/simulacija_opcinskog.pdf' } },
+      { data: { id: 'zup2016', name: 'Simulacija županijskog natjecanja 2016', href: 'http://mnm.hr/wp-content/uploads/2015/10/simulacija_zupanijskog.pdf' } },
+      { data: { id: 'drz2016', name: 'Simulacija državnog natjecanja 2016', href: 'http://mnm.hr/wp-content/uploads/2015/10/simulacija_drzavnog.pdf' } }
     ],
     edges: [
       { data: { target: 'kong', source: 'djel' } },
@@ -82,11 +87,14 @@ var cy1 = cytoscape({
       { data: { target: 'ekstrem', source: 'dokaz' } },
       { data: { target: 'feuerbach', source: 'tetiv' } },
       { data: { target: 'nindu', source: 'indu' } },
+      { data: { source: 'opc2016', target: 'zup2016' } },
+      { data: { source: 'zup2016', target: 'drz2016' } }
     ]
   },
   
   layout: {
     name: 'dagre',
+    rankDir: 'LR'
   }
 });
   
