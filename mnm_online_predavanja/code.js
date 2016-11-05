@@ -49,24 +49,24 @@ var cy1 = cytoscape({
       { data: { id: 'dirich', name: 'Dirichletov princip', href: 'http://mnm.hr/wp-content/uploads/2015/10/dirichlet.pdf' } },
       { data: { id: 'suksi', name: 'Sukladnost i sličnost', href: 'http://mnm.hr/wp-content/uploads/2015/10/sukladnost_i_slicnost.pdf' } },
       { data: { id: 'indu', name: 'Matematička indukcija', href: 'http://mnm.hr/wp-content/uploads/2015/11/matematicka_indukcija.pdf' } },
-      { data: { id: 'kara', name: 'Karakteristične točke trokuta', href: 'http://mnm.hr/wp-content/uploads/2015/10/karakteristicne_tocke_trokuta.pdf' } },
-      { data: { id: 'kagh', name: 'Uvod u nejednakosti (KAGH)', href: 'http://mnm.hr/wp-content/uploads/2015/10/uvod_u_nejednakosti.pdf' } },
+      { data: { id: 'kara', name: 'Kar. točke trokuta', href: 'http://mnm.hr/wp-content/uploads/2015/10/karakteristicne_tocke_trokuta.pdf' } },
+      { data: { id: 'kagh', name: 'Uvod u nejednakosti', href: 'http://mnm.hr/wp-content/uploads/2015/10/uvod_u_nejednakosti.pdf' } },
       { data: { id: 'prost', name: 'Prosti brojevi', href: 'http://mnm.hr/wp-content/uploads/2015/10/prosti_brojevi.pdf' } },
       { data: { id: 'povrs', name: 'Površine u geometriji', href: 'http://mnm.hr/wp-content/uploads/2015/10/povrsine_u_geometriji.pdf' } },
-      { data: { id: 'jednbe', name: 'Jednadžbe i sustavi jednadžbi', href: 'http://mnm.hr/wp-content/uploads/2015/10/jednadzbe_i_sustavi.pdf' } },
-      { data: { id: 'ferma', name: 'Mali Fermatov i Eulerov teorem', href: 'http://mnm.hr/wp-content/uploads/2015/10/mali_fermat_i_euler.pdf' } },
+      { data: { id: 'jednbe', name: 'Jednadžbe i sustavi', href: 'http://mnm.hr/wp-content/uploads/2015/10/jednadzbe_i_sustavi.pdf' } },
+      { data: { id: 'ferma', name: 'Mali Fermatov i Eulerov tm.', href: 'http://mnm.hr/wp-content/uploads/2015/10/mali_fermat_i_euler.pdf' } },
       { data: { id: 'tetiv', name: 'Tetivni četverokuti', href: 'http://mnm.hr/wp-content/uploads/2016/02/tetivni_cetverokut.pdf' } },
-      { data: { id: 'simpol', name: 'Simetrični polinomi i Vieteove formule', href: 'http://mnm.hr/wp-content/uploads/2015/10/Simetricni_polinomi_i_Vieteove_formule.pdf' } },
-      { data: { id: 'kombgeo', name: 'Uvod u kombinatornu geometriju', href: 'http://mnm.hr/wp-content/uploads/2016/03/kombinatorna_geometrija_uvod.pdf' } },
+      { data: { id: 'simpol', name: 'Sim. polinomi i Vieteove', href: 'http://mnm.hr/wp-content/uploads/2015/10/Simetricni_polinomi_i_Vieteove_formule.pdf' } },
+      { data: { id: 'kombgeo', name: 'Uvod u komb. geometriju', href: 'http://mnm.hr/wp-content/uploads/2016/03/kombinatorna_geometrija_uvod.pdf' } },
       { data: { id: 'pell', name: 'Pellova jednadžba', href: 'http://mnm.hr/wp-content/uploads/2016/03/pellova_jednadzba.pdf' } },
       { data: { id: 'csb', name: 'CSB nejednakost', href: 'http://mnm.hr/wp-content/uploads/2015/10/csb_nejednakost.pdf' } },
       { data: { id: 'pottocke', name: 'Potencija točke i radikalna os', href: 'http://mnm.hr/wp-content/uploads/2016/03/potencija_tocke.pdf' } },
-      { data: { id: 'feuerbach', name: 'Kružnica 9 točaka (Feuerbachova)', href: 'http://mnm.hr/wp-content/uploads/2016/10/Feuerbachova_kruznica.pdf' } },
+      { data: { id: 'feuerbach', name: 'Kružnica 9 točaka', href: 'http://mnm.hr/wp-content/uploads/2016/10/Feuerbachova_kruznica.pdf' } },
       { data: { id: 'ekstrem', name: 'Princip ekstrema', href: 'http://mnm.hr/wp-content/uploads/2016/10/Princip_ekstrema.pdf' } },
       { data: { id: 'nindu', name: 'Napredna indukcija', href: 'http://mnm.hr/wp-content/uploads/2016/10/Napredna_indukcija.pdf' } },
-      { data: { id: 'opc2016', name: 'Simulacija općinskog natjecanja 2016', href: 'http://mnm.hr/wp-content/uploads/2016/01/simulacija_opcinskog.pdf' } },
-      { data: { id: 'zup2016', name: 'Simulacija županijskog natjecanja 2016', href: 'http://mnm.hr/wp-content/uploads/2015/10/simulacija_zupanijskog.pdf' } },
-      { data: { id: 'drz2016', name: 'Simulacija državnog natjecanja 2016', href: 'http://mnm.hr/wp-content/uploads/2015/10/simulacija_drzavnog.pdf' } }
+      { data: { id: 'opc2016', name: 'Simul. opć. natj. 2016', href: 'http://mnm.hr/wp-content/uploads/2016/01/simulacija_opcinskog.pdf' } },
+      { data: { id: 'zup2016', name: 'Simul. žup. natj. 2016', href: 'http://mnm.hr/wp-content/uploads/2015/10/simulacija_zupanijskog.pdf' } },
+      { data: { id: 'drz2016', name: 'Simul. drž. natj. 2016', href: 'http://mnm.hr/wp-content/uploads/2015/10/simulacija_drzavnog.pdf' } }
     ],
     edges: [
       { data: { target: 'kong', source: 'djel' } },
@@ -97,7 +97,8 @@ var cy1 = cytoscape({
   layout: {
     name: 'dagre',
     rankDir: 'LR',
-    padding: 0
+    padding: 0,
+    rankSep: 30
   }
 });
   
