@@ -52,6 +52,7 @@ var cy1 = cytoscape({
       { data: { id: 'kara', name: 'Kar. točke trokuta', href: 'http://mnm.hr/wp-content/uploads/2015/10/karakteristicne_tocke_trokuta.pdf' } },
       { data: { id: 'kagh', name: 'Uvod u nejednakosti', href: 'http://mnm.hr/wp-content/uploads/2015/10/uvod_u_nejednakosti.pdf' } },
       { data: { id: 'prost', name: 'Prosti brojevi', href: 'http://mnm.hr/wp-content/uploads/2015/10/prosti_brojevi.pdf' } },
+      { data: { id: 'relprost', name: 'Relativno prosti br.', href: 'http://mnm.hr/wp-content/uploads/2016/11/relativno_prosti_brojevi.pdf' } },
       { data: { id: 'povrs', name: 'Površine u geometriji', href: 'http://mnm.hr/wp-content/uploads/2015/10/povrsine_u_geometriji.pdf' } },
       { data: { id: 'jednbe', name: 'Jednadžbe i sustavi', href: 'http://mnm.hr/wp-content/uploads/2015/10/jednadzbe_i_sustavi.pdf' } },
       { data: { id: 'ferma', name: 'Mali Fermatov i Eulerov tm.', href: 'http://mnm.hr/wp-content/uploads/2015/10/mali_fermat_i_euler.pdf' } },
@@ -90,7 +91,8 @@ var cy1 = cytoscape({
       { data: { target: 'feuerbach', source: 'tetiv' } },
       { data: { target: 'nindu', source: 'indu' } },
       { data: { source: 'opc2016', target: 'zup2016' } },
-      { data: { source: 'zup2016', target: 'drz2016' } }
+      { data: { source: 'zup2016', target: 'drz2016' } },
+      { data: { source: 'prost', target: 'relprost' } },
     ]
   },
   
