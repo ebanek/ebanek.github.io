@@ -68,8 +68,10 @@ var cy1 = cytoscape({
       { data: { id: 'opc2016', name: 'Simul. opć. natj. 2016', href: 'http://mnm.hr/wp-content/uploads/2016/01/simulacija_opcinskog.pdf' } },
       { data: { id: 'zup2016', name: 'Simul. žup. natj. 2016', href: 'http://mnm.hr/wp-content/uploads/2015/10/simulacija_zupanijskog.pdf' } },
       { data: { id: 'drz2016', name: 'Simul. drž. natj. 2016', href: 'http://mnm.hr/wp-content/uploads/2015/10/simulacija_drzavnog.pdf' } }
+      { data: { id: 'pravokut', name: 'Pravokutni trokuti', href: 'http://mnm.hr/wp-content/uploads/2016/11/Pravokutni_trokuti.pdf' } }
     ],
     edges: [
+      { data: { target: 'pravokut', source: 'suksi' } },
       { data: { target: 'kong', source: 'djel' } },
       { data: { target: 'indu', source: 'algiz' } },
       { data: { target: 'kara', source: 'suksi' } },
